@@ -1,0 +1,40 @@
+header h1 {
+	font-size: 200px;
+	text-align: center;
+	color: blue;
+	margin-top: 5px;
+}
+
+header nav ul {
+	background-color: blue;
+	font-size: 30px;
+	text-align: center;
+}
+
+header nav ul li {
+	display:inline-block;
+	margin-left: 1%;	
+	margin-right: 1%; 
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5px;
+	color: white;
+	font-family: Copperplate;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: white;
+}
