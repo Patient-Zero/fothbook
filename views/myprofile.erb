@@ -1,0 +1,36 @@
+	<div class="title">
+		<h1>
+			<span style="color:blue; text-align: center; padding: 3%">
+				My Profile
+			</span>
+		</h1>
+	</div>
+
+	<div>
+	<form method="POST" action="/updateprofile">
+		<label for="username">Username</label>
+		<input type="text" name="username"><br>
+		<label for="password">Password</label>
+		<input type="password" name="password"><br><br>
+		<label for="fname">First Name</label>
+
+		<br>
+		<input type="text" name="fname" required>
+		<br>
+		<label for="lname">Last Name</label>
+		<br>
+		<input type="text" name="lname" required>
+		<br>
+		<label for="location">Location</label>
+		<br>
+		<input type="text" name="location" required>
+		<br>
+		<label for="bio">Biography</label>
+		<br>
+		<textarea name="bio" required rows="3" cols="40" required></textarea>
+		<br>
+		<input type="submit">
+	</form>
+
+	<a href="/updateprofile">Update Your Profile</a>
+	<a href="/delete_account">Delete Your Account</a>

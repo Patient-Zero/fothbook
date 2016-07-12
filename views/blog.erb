@@ -1,0 +1,35 @@
+	<div>
+		<h1>
+			<span style="color:blue;font-weight:bold">
+				Blog
+			</span>
+		</h1>
+	</div>
+	<form method="POST" action="/blog">
+			<label for="title">Subject:</label>
+			<textarea name="subject"></textarea>
+			<br>
+			<br>
+
+			Spill
+			<br>
+			(150 or fewer characters:
+			<br>
+			<label for="text">Your Post:</label>
+			<textarea cols="50" rows="4" name="content"></textarea>
+			<br>
+
+			<input type="submit" onclick="validateForm()">
+			<p></p>
+
+			Newsfeed:
+			<br>
+			<label for="feed">Newsfeed</label>
+			<textarea cols="50" rows="40" name="comment">
+			
+			<% @posts.each do |anything| %>
+			Subject: <%= anything.subject %>
+			Content: <%= anything.content %>
+			<% end %>
+			 </textarea>
+	</form>

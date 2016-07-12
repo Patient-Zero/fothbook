@@ -1,6 +1,10 @@
-# frozen_string_literal: true
-# A sample Gemfile
-source "https://rubygems.org"
-gem "sinatra"
+source "http://rubygems.org"
+ruby "2.3.0"
 
-# gem "rails"
+gem "sinatra"
+gem "activerecord", "4.2.6"
+gem "sinatra-activerecord"
+gem "rake"
+gem "sqlite3"
+gem "sinatra-flash"
+

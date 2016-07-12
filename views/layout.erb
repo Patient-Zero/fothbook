@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="/layout.css">
+	<title>Fothbook</title>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
-<body>
-	<header>
-		<h1>Fothbook</h1>
-		<nav>
-			<ul> 
-				<li><a href = "#">Sign in</a></li> 
-				<li><a href = "#">Sign up</a></li>
-				<li><a href = "#">Log Out</a></li> 
-			</ul> 
-		</nav>
-	</header>
-	
 
-	
-	<%= yield %>
-	<footer></footer>
+<body>
+	<div class = "fixed"> 
+		<img src="/images/goat.png" width="100px">
+		<h1 style="color: blue; text-align: center; font-size: 100px">Fothbook</h1>
+		<h2 style="color: red; text-align: center; font-size: 50px"><i>Follow-the-Herd</i>  Book</h2>
+	</div>
+
+		<div class="header">
+			<div class="headerContent">
+				<div class="navbar">
+					<ul id="general">
+						<li><a href="/">Home</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="/myprofile">My Profile</a></li>
+						<li><a href="/profiles">All Profiles</a></li>
+						<li><a href="/signup">Signup</a></li>
+						<li><a href="/login">Log IN</a></li>
+						<li><a href="/logout">Log OUT</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	  	<div class="transbox">
+	    	<%= yield %>
+	  	</div>
+		
+	<div class="footer">
+		<p>Fothbook</p>
+	</div>
+
 </body>
-</html> 
+</html>
+
